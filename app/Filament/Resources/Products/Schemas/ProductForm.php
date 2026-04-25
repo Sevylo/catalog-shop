@@ -15,8 +15,8 @@ class ProductForm
     {
         return $schema
             ->components([
-                \Filament\Forms\Components\Group::make()->schema([
-                    \Filament\Forms\Components\Section::make('Informasi Produk')
+                \Filament\Schemas\Components\Group::make()->schema([
+                    \Filament\Schemas\Components\Section::make('Informasi Produk')
                         ->schema([
                             TextInput::make('name')
                                 ->label('Nama Produk')
@@ -37,7 +37,7 @@ class ProductForm
                                 ->columnSpanFull(),
                         ])->columns(2),
 
-                    \Filament\Forms\Components\Section::make('Gambar Produk')
+                    \Filament\Schemas\Components\Section::make('Gambar Produk')
                         ->schema([
                             FileUpload::make('image')
                                 ->label('Gambar Utama')
@@ -48,8 +48,8 @@ class ProductForm
                         ]),
                 ])->columnSpan(['lg' => 2]),
 
-                \Filament\Forms\Components\Group::make()->schema([
-                    \Filament\Forms\Components\Section::make('Harga & Stok')
+                \Filament\Schemas\Components\Group::make()->schema([
+                    \Filament\Schemas\Components\Section::make('Harga & Stok')
                         ->schema([
                             TextInput::make('price')
                                 ->label('Harga Normal')
@@ -75,7 +75,7 @@ class ProductForm
                                 ->maxLength(255),
                         ]),
                     
-                    \Filament\Forms\Components\Section::make('Status')
+                    \Filament\Schemas\Components\Section::make('Status')
                         ->schema([
                             Toggle::make('is_active')
                                 ->label('Aktif')

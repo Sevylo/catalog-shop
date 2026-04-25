@@ -12,7 +12,7 @@ class SettingForm
     {
         return $schema
             ->components([
-                \Filament\Forms\Components\Section::make('Pengaturan')
+                \Filament\Schemas\Components\Section::make('Pengaturan')
                     ->schema([
                         TextInput::make('key')
                             ->label('Kunci (Key)')

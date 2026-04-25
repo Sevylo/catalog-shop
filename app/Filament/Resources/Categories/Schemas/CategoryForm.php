@@ -14,7 +14,7 @@ class CategoryForm
     {
         return $schema
             ->components([
-                \Filament\Forms\Components\Section::make('Informasi Kategori')
+                \Filament\Schemas\Components\Section::make('Informasi Kategori')
                     ->schema([
                         TextInput::make('name')
                             ->label('Nama Kategori')
@@ -30,7 +30,7 @@ class CategoryForm
                             ->columnSpanFull(),
                     ])->columns(1),
                 
-                \Filament\Forms\Components\Section::make('Status')
+                \Filament\Schemas\Components\Section::make('Status')
                     ->schema([
                         Toggle::make('is_active')
                             ->label('Aktif')
