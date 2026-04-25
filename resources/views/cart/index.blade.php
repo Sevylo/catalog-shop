@@ -110,15 +110,15 @@
                         <h3 class="font-semibold text-gray-900">Data Pembeli</h3>
                         <div>
                             <label class="block text-sm font-medium text-gray-700 mb-1">Nama Lengkap *</label>
-                            <input type="text" x-model="buyerName" class="w-full border-gray-300 rounded-lg shadow-sm focus:ring-primary-500 focus:border-primary-500" placeholder="Masukkan nama Anda" required>
+                            <input type="text" x-model="buyerName" class="w-full px-4 py-2.5 border-gray-300 rounded-lg shadow-sm focus:ring-primary-500 focus:border-primary-500" placeholder="Masukkan nama Anda" required>
                         </div>
                         <div>
                             <label class="block text-sm font-medium text-gray-700 mb-1">Alamat Pengiriman *</label>
-                            <textarea x-model="buyerAddress" rows="3" class="w-full border-gray-300 rounded-lg shadow-sm focus:ring-primary-500 focus:border-primary-500" placeholder="Alamat lengkap (beserta kode pos)" required></textarea>
+                            <textarea x-model="buyerAddress" rows="3" class="w-full px-4 py-2.5 border-gray-300 rounded-lg shadow-sm focus:ring-primary-500 focus:border-primary-500" placeholder="Alamat lengkap (beserta kode pos)" required></textarea>
                         </div>
                         <div>
                             <label class="block text-sm font-medium text-gray-700 mb-1">Catatan Tambahan (Opsional)</label>
-                            <input type="text" x-model="buyerNotes" class="w-full border-gray-300 rounded-lg shadow-sm focus:ring-primary-500 focus:border-primary-500" placeholder="Pesan untuk penjual">
+                            <input type="text" x-model="buyerNotes" class="w-full px-4 py-2.5 border-gray-300 rounded-lg shadow-sm focus:ring-primary-500 focus:border-primary-500" placeholder="Pesan untuk penjual">
                         </div>
                     </div>
 
